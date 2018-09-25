@@ -25,6 +25,12 @@ La máquina servidor tendrá dos interfaces de red.
 > La segunda interfaz servirá para conectarse con los clientes ligeros. Esta
 interfaz debe ser estática y debe estar en la misma red que los clientes.
 
+![](./img/imgip3.PNG)
+
+> Si la configuración de antes diera problemas entonces vamos a cambiarla
+con la consola yendo a estas direcciones.
+
+
 ### 3.2 Instalación del SSOO
 
 Una vez instalado nuestro sistema operativo, que será Xubuntu, debemos hacer
