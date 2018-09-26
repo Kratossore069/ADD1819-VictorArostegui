@@ -69,9 +69,27 @@ Instalamos el servidor de clientes ligeros.
 Con la siguiente foto hemos creado una imagen de 32 bits del SO. Esto se
 cargará en la memoria interna de los clientes ligeros.
 
+![](./img/img9.PNG)
+
 Con el siguiente comando consultamos información de lo que hemos hecho.
+
+![](./img/img10.PNG)
 
 Después de todo esto, consultamos el fichero de configuración del servicio
 DHCP instalado junto con LTSP.
 
+![](./img/img11.PNG)
+
 Comprobar si las rutas son correctas:
+
+![](./img/img12.PNG)
+
+> Tal y como se muestra en la imagen de arriba, se han cambiado esas
+líneas ya que nuestro sistema es de 64 bits.
+
+En este mismo fichero vamos a modificar el valor range que está señalado
+por nuestro numero de ordenador.
+
+![](./img/img13.PNG)
+
+Ahora reiniciamos y observamos que los servicios están corriendo.
