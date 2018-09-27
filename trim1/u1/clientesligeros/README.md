@@ -70,7 +70,10 @@ Instalamos el servidor de clientes ligeros.
 ![](./img/img8.PNG)
 
 Con la siguiente foto hemos creado una imagen de 32 bits del SO. Esto se
-cargará en la memoria interna de los clientes ligeros.
+cargará en la memoria interna de los clientes ligeros. Esto puede tardar
+bastante tiempo.
+
+![](./img/img8.1.PNG)
 
 ![](./img/img9.PNG)
 
