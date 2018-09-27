@@ -30,6 +30,9 @@ interfaz debe ser estática y debe estar en la misma red que los clientes.
 > Si la configuración de antes diera problemas entonces vamos a cambiarla
 con la consola yendo a estas direcciones.
 
+* Pueden existir problemas de equivocarse de red que queremos configurar y
+que sea la contraria.
+
 
 ### 3.2 Instalación del SSOO
 
@@ -93,3 +96,15 @@ por nuestro numero de ordenador.
 ![](./img/img13.PNG)
 
 Ahora reiniciamos y observamos que los servicios están corriendo.
+
+![](./img/img14.PNG)
+
+## 4. Preparar MV Cliente
+
+Crear la máquina virtual sin disco duro y sin unidad DVD. Solamente tiene
+RAM y una tarjeta de red interna. Configuramos memoria gráfica a 128M y
+habilitamos soporte 3D.
+
+![](./img/img15.PNG)
+
+Ahora iniciamos el cliente1 y el servidor.
