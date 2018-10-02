@@ -111,3 +111,7 @@ habilitamos soporte 3D.
 ![](./img/img15.PNG)
 
 Ahora iniciamos el cliente1 y el servidor.
+
+![](./img/img16.PNG)
+
+> Vemos que el cliente recibe la IP del servidor pero no arranca como queremos.
