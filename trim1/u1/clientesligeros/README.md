@@ -41,7 +41,7 @@ unas comprobaciones iniciales.
 
 ![](./img/img3.PNG)
 
-![](./img/img4.PNG)
+![](./img/imghost.PNG)
 
 A continuación, creamos tres usuarios locales.
 
