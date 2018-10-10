@@ -48,10 +48,16 @@ Poner en la consola **nmap -Pn IP-VNC-SERVER** para comprobar que los servicios 
 
 Vamos intentar establecer conexión entre Windows y Linux.
 
+![](./img/img18.PNG)
+
 ### 3.4 Ir al cliente GNU/Linux.
 
 
 ### 3.5 Comprobaciones finales.
+
+Utilizando el comando **netstat -n** podemos observar que se abren puertos para las conexiones vnc.
+
+![](./img/img19.PNG)
 
 ## 4. Instalación en OpenSUSE.
 
@@ -108,3 +114,9 @@ Accedemos de la siguiente forma en el cuadro de texto.
 Y vemos que funciona.
 
 ![](./img/img16.PNG)
+
+### 4.4 Ir al cliente Windows.
+
+### 4.5 Comprobaciones finales.
+
+## 5. DISPLAY 0 en GNU/Linux.
