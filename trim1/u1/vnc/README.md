@@ -46,14 +46,21 @@ Poner en la consola **nmap -Pn IP-VNC-SERVER** para comprobar que los servicios 
 
 ### 3.3 Ir al cliente Windows.
 
-Vamos intentar establecer conexión entre Windows y Linux.
+Vamos intentar establecer conexión entre Windows y Windows.
 
-![](./img/img18.PNG)
+![](./img/img20.PNG)
 
-### 3.4 Ir al cliente GNU/Linux.
+> En esta foto podemos observar que la máquina de la izquierda es el cliente y vamos a conectar a la máquina de la derecha, que es el servidor.
 
+![](./img/img21.PNG)
 
-### 3.5 Comprobaciones finales.
+> A la hora de conectar con el servidor vemos que es necesario una contraseña que, anteriormente, introducimos para ambas máquinas. Es necesaria para establecer conexión.
+
+![](./img/img22.PNG)
+
+> Podemos observar que se ha establecido conexión y que vemos las dos pantallas.
+
+### 3.4 Comprobaciones finales.
 
 Utilizando el comando **netstat -n** podemos observar que se abren puertos para las conexiones vnc.
 
@@ -115,8 +122,28 @@ Y vemos que funciona.
 
 ![](./img/img16.PNG)
 
-### 4.4 Ir al cliente Windows.
+### 4.4 Comprobaciones finales.
 
-### 4.5 Comprobaciones finales.
+## 5. Comprobaciones.
 
-## 5. DISPLAY 0 en GNU/Linux.
+Vamos a conectar la máquina virtual OpenSUSE a la máquina Windows. Es importante para hacer esta prueba desactivar el cortafuegos ya que puede interferir en nuestra prueba.
+
+![](./img/img23.PNG)
+
+![](./img/img24.PNG)
+
+![](./img/img25.PNG)
+
+> Nos pedirá una contraseña que antes ya habíamos insertado en la configuración.
+
+![](./img/img26.PNG)
+
+Vemos que funciona perfectamente. Ahora vamos a probar desde Windows hasta OpenSUSE.
+
+## 6. Display 0.
+
+Como último paso, cuando queremos ejecutar **vncserver** para controlar directamente la pantalla local usaremos **x0vncserver -display :0 -passwordfile /home/nombrealumno/.vnc/passwd**.
+
+Para más información, véase **man x0vncserver**.
+
+![](./img/img27.PNG)
