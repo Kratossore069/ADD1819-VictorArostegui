@@ -146,7 +146,7 @@ Vemos que funciona perfectamente. Ahora vamos a probar desde OpenSUSE hasta Open
 
 ![](./img/img29.PNG)
 
-> Vemos que conecta pero vemos la pantalla en negro.
+> Vemos que conecta pero vemos la pantalla negra.
 
 ## 6. Display 0.
 
