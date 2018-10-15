@@ -138,7 +138,15 @@ Vamos a conectar la máquina virtual OpenSUSE a la máquina Windows. Es importan
 
 ![](./img/img26.PNG)
 
-Vemos que funciona perfectamente. Ahora vamos a probar desde Windows hasta OpenSUSE.
+Vemos que funciona perfectamente. Ahora vamos a probar desde OpenSUSE hasta OpenSUSE.
+
+![](./img/img28.PNG)
+
+> Podemos ver que en la pantalla de la derecha está el comando **vncviewer IP:5901**. Lo último es el puerto al que debemos conectarnos
+
+![](./img/img28.PNG)
+
+> Vemos que conecta pero vemos la pantalla en negro.
 
 ## 6. Display 0.
 
