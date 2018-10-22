@@ -92,3 +92,93 @@ Desde el cliente GNU/Linux nos conectamos mediante ssh 1er-apellido-alumno1@ssh-
 ![](./img/img20.PNG)
 
 ![](./img/img21.PNG)
+
+Ahora debemos comprobar  el contenido del fichero **$HOME/.ssh/known_hosts** en el equipo **ssh-client1**.
+
+![](./img/img22.PNG)
+
+> Podemos observar que existe una clave de acceso que es la clave de identificación de ssh-server.
+
+## 2.3 Primera conexión SSH desde cliente Windows.
+
+ Desde el cliente de Windows nos vamos a conectar usando **Putty** al servidor.
+
+![](./img/img23.PNG)
+
+![](./img/img24.PNG)
+
+![](./img/img25.PNG)
+
+> Hacemos lo mismo que en el punto anterior que es registrar las claves de acceso al servidor desde el cliente. Vemos que podemos conectarnos por SSH perfectamente.
+
+# 3. ¿Y si cambiamos las claves del servidor?
+
+Tenemos que confirmar que existen los siguientes ficheros en **/etc/ssh**. Los ficheros **ssh_host*key** y **ssh_host*key.pub** son ficheros de claves públicas y privadas que necesitamos para establecer conexión entre máquinas.
+
+![](./img/img26.PNG)
+
+Vamos a modificar el fichero de configuración SSH **/etc/ssh/sshd_config** para dejar una única línea **HostKey /etc/ssh/ssh_host_rsa_key**. El resto de líneas las tenemos que comentar  para que solo se permita acceder con la configuración insertada antes.
+
+![](./img/img27.PNG)
+
+## Regenerar certificados.
+
+En **ssh-serverXXg** como usuario root ejecutamos **ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key**.
+
+![](./img/img28.PNG)
+
+> No poner password al certificado de la máquina.
+
+Reiniciar el servicio SSH usando **systemctl restart sshd**.
+
+![](./img/img29.PNG)
+
+> Comprobar que el servicio está en ejecución correctamente con **systemctl status sshd**.
+
+## Comprobamos.
+
+![](./img/img30.PNG)
+
+> Podemos observar que salta un aviso de que no se ha podido ingresar desde el cliente de OpenSUSE debido a los cambios hechos anteriormente.
+
+# 4. Personalización del prompt bash.
+
+Vamos a cambiar el prompt de **carvajal1**. Accedemos a **/home/carvajal1/.bashrc**
+
+![](./img/img31.PNG)
+
+![](./img/img32.PNG)
+
+Además, crearemos otro fichero en la misma ruta con este contenido.
+
+![](./img/img33.PNG)
+
+Comprobamos la conexión.
+
+![](./img/img34.PNG)
+
+> Hay que volver a entrar en el servidor y volver a comentar la línea de rsa en **/etc/ssh/sshd_config** debido a que no podremos conectar con el servidor sin cambiarlo.
+
+# 5. Autenticación mediante claves públicas.
+
+El objetivo de este apartado es el de configurar SSH para poder acceder desde el cliente1, usando el nombre-alumno sin poner password, pero usando claves pública/privada. Vamos a entrar en el cliente y generamos nuevas claves.
+
+![](./img/img35.PNG)
+
+Ahora debemos copiar las claves desde el cliente hasta el otro cliente en remoto usando el siguiente comando.
+
+![](./img/img36.PNG)
+
+Vamos a ver que ahora, desde el cliente4, podemos acceder sin necesidad de poner contraseña.
+
+![](./img/img37.PNG)
+
+# 6. Uso de SSH como túnel para X.
+
+Vamos a instalar una app en el servidor y hacer posible que los clientes, por remoto, puedan ejecutarla.
+
+![](./img/img38.PNG)
+
+Vamos al servidor y en la configuración dejamos la siguiente línea así.
+
+![](./img/img39.PNG)
