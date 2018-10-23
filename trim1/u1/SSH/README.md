@@ -182,3 +182,17 @@ Vamos a instalar una app en el servidor y hacer posible que los clientes, por re
 Vamos al servidor y en la configuración dejamos la siguiente línea así.
 
 ![](./img/img39.PNG)
+
+Vamos al cliente y nos aseguramos de que no tenemos instalada la aplicación del servidor. Una vez hecho esto, nos conectamos en remoto...
+
+![](./img/img41.PNG)
+
+ y observamos que, desde el cliente, podemos observar las aplicaciones instaladas en el servidor.
+
+![](./img/img40.PNG)
+
+# 7. Aplicaciones Windows nativas.
+
+Instalamos el emulador Wine en el ssh-serverXXg. Puede tardar un poco.
+
+![](./img/img42.PNG)
