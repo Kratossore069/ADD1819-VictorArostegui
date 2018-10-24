@@ -196,3 +196,17 @@ Vamos al cliente y nos aseguramos de que no tenemos instalada la aplicación del
 Instalamos el emulador Wine en el ssh-serverXXg. Puede tardar un poco.
 
 ![](./img/img42.PNG)
+
+![](./img/img43.PNG)
+
+Wine es una utilidad que permite ejecutar archivos propios de Windows en Linux. Ahora vamos a probar hacer justo esto.
+
+![](./img/img44.PNG)
+
+> Se trata de un archivo .exe que se puede instalar en Windows pero, gracias a Wine, se puede abrir también en Linux.
+
+![](./img/img45.PNG)
+
+![](./img/img46.PNG)
+
+> Igualmente en esta máquina virtual no podemos arrancar el juego.
