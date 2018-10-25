@@ -238,3 +238,11 @@ Creamos un grupo nuevo e introducimos al usuario carvajal4.
 Vemos que la aplicación que anteriormente instalamos tiene permisos 755.
 
 ![](./img/img54.PNG)
+
+Usando `sudo chown carvajal4 -R geany` cambiamos el propietario.
+
+![](./img/img56.PNG)
+
+Cambiamos los permisos de la aplicación a 750.
+
+![](./img/img57.PNG)
