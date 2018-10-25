@@ -210,3 +210,31 @@ Wine es una utilidad que permite ejecutar archivos propios de Windows en Linux. 
 ![](./img/img46.PNG)
 
 > Igualmente en esta máquina virtual no podemos arrancar el juego.
+
+# 8. Restricciones de uso.
+
+Vamos a modificar los usuarios del servidor SSH para añadir algunas restricciones de uso del servicio.
+
+## Restricción sobre un usuario.
+
+![](./img/img51.PNG)
+
+> Lo que hay que hacer es ir a /etc/ssh/sshd_config y crear la linea resaltada en azul como en la imagen para denegar la entrada al usuario carvajal2.
+
+![](./img/img52.PNG)
+
+> Por más que lo intentemos no podremos entrar.
+
+![](./img/imgimg.PNG)
+
+Ni siquiera desde la máquina cliente.
+
+## Restricción sobre una aplicación.
+
+Creamos un grupo nuevo e introducimos al usuario carvajal4.
+
+![](./img/img53.PNG)
+
+Vemos que la aplicación que anteriormente instalamos tiene permisos 755.
+
+![](./img/img54.PNG)
