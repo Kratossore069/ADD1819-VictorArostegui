@@ -246,3 +246,29 @@ Usando `sudo chown carvajal4 -R geany` cambiamos el propietario.
 Cambiamos los permisos de la aplicación a 750.
 
 ![](./img/img57.PNG)
+
+Vemos que no podemos ejecutar el programa.
+
+![](./img/img80.PNG)
+
+Vemos que no podemos entrar desde el usuario `carvajal4`.
+
+![](./img/img81.PNG)
+
+# 9. Servidor SSH en Windows.
+
+Configurar el servidor Windows que vamos a utilizar (en mi caso voy a utilizar la máquina cliente de Windows anterior).
+
+![](./img/img82.PNG)
+
+![](./img/img83.PNG)
+
+> Insertamos las otras máquinas en nuestro documento hosts en **/Windows/System32/drivers/etc/hosts**
+
+Observamos que existe comunicación entre las máquinas.
+
+![](./img/img84.PNG)
+
+Descargar la última versión de OpenSSH en nuestra máquina.
+
+![](./img/img85.PNG)
