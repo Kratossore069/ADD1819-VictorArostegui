@@ -272,3 +272,15 @@ Observamos que existe comunicación entre las máquinas.
 Descargar la última versión de OpenSSH en nuestra máquina.
 
 ![](./img/img85.PNG)
+
+Descargamos la versión x64 y lo descargamos en `/C:/Archivos de programa`. Lo descomprimimos.
+
+![](./img/imgb.PNG)
+
+Ponemos en funcionamiento estos dos programas.
+
+![](./img/imgc.PNG)
+
+![](./img/imgd.PNG)
+
+> Vemos que existe conexión.
