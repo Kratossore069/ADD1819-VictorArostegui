@@ -71,3 +71,69 @@ Y un último comando llamado `testparm`.
 ## 1.6 Usuarios Samba.
 
 Después de crear los usuarios en el sistema, hay que añadirlos a Samba.
+
+![](./img/img15.PNG)
+
+Comprobamos la lista de usuarios Samba.
+
+![](./img/img16.PNG)
+
+## 1.7 Reiniciar.
+
+Ahora que hemos terminado con el servidor, hay que reiniciar el servicio para que se lean los cambios de configuración.
+
+Reiniciamos el servicio smb.
+
+![](./img/img17.PNG)
+
+Reiniciamos el servicio nmb.
+
+![](./img/img18.PNG)
+
+Verificamos la sintaxis del fichero de configuración del servidor Samba.
+
+![](./img/img19.PNG)
+
+Observamos que el servicio SMB/CIF está a la escucha.
+
+![](./img/img20.PNG)
+
+# 2. Windows.
+
+Configuramos los hosts de Windows.
+
+![](./img/img21.PNG)
+
+> C:/Windows/System32/drivers/etc/hosts
+
+## 2.1 Cliente Windows GUI.
+
+Desde un cliente Windows vamos a acceder a los recursos compartidos del servidor Samba.
+
+![](./img/img22.PNG)
+
+Intentamos conectarnos como un usuario en uno de los grupos del servidor.
+
+![](./img/img23.PNG)
+
+> Debemos tener algún problema con el cortafuegos por lo que no podemos entrar.
+
+Observamos las conexiones desde el servidor.
+
+![](./img/img24.PNG)
+
+Desde el cliente Windows.
+
+![](./img/img25.PNG)
+
+## 2.2 Cliente Windows comandos.
+
+ Consultamos todas las conexiones/recursos conectados.
+
+![](./img/img26.PNG)
+
+> `net use * /d /y` para cerrar las conexiones SMB.
+
+Vemos las máquinas accesibles por la red.
+
+![](./img/img27.PNG)
