@@ -249,3 +249,11 @@ Se crearía el recurso `homes` y, por consiguiente, la carpeta.
 **¿Cómo pueden los clientes acceder al CDROM del servidor usando Samba?**
 
 A través del `smbguest`, ya que es un usuario de ese grupo.
+
+**/dev/cdrom ¿Dónde apunta? ¿Qué permisos tiene?**
+
+![](./img/img50.PNG)
+
+**/dev/sr0 ¿Que permisos tiene?**
+
+![](./img/img51.PNG)
