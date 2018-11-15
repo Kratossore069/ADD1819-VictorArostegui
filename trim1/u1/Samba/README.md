@@ -257,3 +257,8 @@ A través del `smbguest`, ya que es un usuario de ese grupo.
 **/dev/sr0 ¿Que permisos tiene?**
 
 ![](./img/img51.PNG)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1ba9a5b0c2f4fc64027bb4df5b8583c08fe434d4
