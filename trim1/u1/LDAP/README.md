@@ -4,7 +4,37 @@
 
 En esta guía vamos a instalar y configurar del servidor LDAP con OpenLDAP.
 
+## 1.1 Nombre del equipo FQDN.
+
+![](./img/imgname.PNG)
+
 ![](./img/img1.PNG)
+
+## 1.2 Opening the Required Ports in the Firewall.
+
+Comprobamos el estado del antivirus.
+
+![](./img/imgfire.PNG)
+
+## 1.3 Directory Server User and Group.
+
+Creará el siguiente recurso automáticamente.
+
+## 1.4 Directory Suffix.
+
+El Directory Suffix es la tercera entrada dentro del árbol de directorios. Al menos un directorio sufijo debe ser proveído cuando el directorio servidor está configurado. El directorio sufijo recomendado empareja sus nombres con tu organización de dominios de nombre DNS. Por ejemplo, si el hostname del directorio servidor is `ldap.example.com`, el directorio sufijo es `dc=example,dc=com`.
+
+## 1.5 About the `setup-ds-admin.pl` Script.
+
+Las instancias del directorio servidor y el servidor de administración son creadas y configuradas a partir de un script llamado setup-ds-admin.pl. El directorio servidor solo puede ser creado usando el setup-ds.pl script.
+
+Si, simplemente, el script de configuración está operativo, entonces el script lanza un interactivo instalador que guía por herramientas de configuración en el directorio servidor y las instancias del servidor de administración. Por ejemplo:
+
+![](./img/imgpal.PNG)
+
+# 2. Instalar el servidor.
+
+PARA REVISAR
 
 Necesitaremos ajustar parámetros del kernel para asegurarnos de que la instalación no se quejará por la falta de recursos. Vamos a crear el siguiente fichero con la siguiente información:
 
@@ -39,18 +69,6 @@ Deberíamos ser capaces de ejecutar este comando sin problemas.
 ![](./img/img005.PNG)
 
 # 4. Después de la instalación: arreglando 389-console.
-
-
-
-
-
-
-
-
-
-
-
-
 
 Procedemos a la instalación del módulo Yast que sirve para gestionar el servidor LDAP `yast2-auth-server`. Para ello:
 
