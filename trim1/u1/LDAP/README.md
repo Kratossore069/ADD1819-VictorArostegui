@@ -1,5 +1,3 @@
-# Servidor 389-DS - OpenSUSE.
-
 # 1. Prerrequisitos.
 
 En esta guía vamos a instalar y configurar del servidor LDAP con OpenLDAP.
@@ -111,3 +109,21 @@ Crear grupo y usuarios.
 Hecho esto, debemos  usar un comando para consultar en la base de datos LDAP la información del usuario con uid concreto.
 
 ![](./img/img11.PNG)
+
+# 2. Cliente LDAP.
+
+## 2.1 Preparativos.
+
+![](./img/img009.PNG)
+
+![](./img/img0010.PNG)
+
+## Comprobación.
+
+Comprobar que el servidor LDAP es accesible desde el cliente.
+
+![](./img/img0011.PNG)
+
+Comprobamos que siguen existiendo los usuarios y grupos creados.
+
+![](./img/img0012.PNG)
