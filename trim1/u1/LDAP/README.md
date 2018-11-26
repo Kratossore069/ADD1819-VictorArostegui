@@ -14,14 +14,6 @@ Comprobamos el estado del antivirus.
 
 ![](./img/imgfire.PNG)
 
-## 1.3 Directory Server User and Group.
-
-Creará el siguiente recurso automáticamente.
-
-## 1.4 Directory Suffix.
-
-El Directory Suffix es la tercera entrada dentro del árbol de directorios. Al menos un directorio sufijo debe ser proveído cuando el directorio servidor está configurado. El directorio sufijo recomendado empareja sus nombres con tu organización de dominios de nombre DNS. Por ejemplo, si el hostname del directorio servidor is `ldap.example.com`, el directorio sufijo es `dc=example,dc=com`.
-
 ## 1.5 About the `setup-ds-admin.pl` Script.
 
 Las instancias del directorio servidor y el servidor de administración son creadas y configuradas a partir de un script llamado setup-ds-admin.pl. El directorio servidor solo puede ser creado usando el setup-ds.pl script.
@@ -32,7 +24,102 @@ Si, simplemente, el script de configuración está operativo, entonces el script
 
 # 2. Instalar el servidor.
 
-PARA REVISAR
+## 2.1 Información.
+
+## Directory Server User and Group.
+
+Parece que lo va a crear automáticamente...(dirsrv).
+
+## Directory Suffix.
+
+El Directory Suffix es la tercera entrada dentro del árbol de directorios. Al menos un directorio sufijo debe ser proveído cuando el directorio servidor está configurado. El directorio sufijo recomendado empareja sus nombres con tu organización de dominios de nombre DNS. Por ejemplo, si el hostname del directorio servidor is `ldap.example.com`, el directorio sufijo es `dc=example,dc=com`.
+
+## 2.2 About the `setup-ds-admin.pl` Script.
+
+Las instancias del servidor de directorios y del servidor de administración se crean y configuran mediante una secuencia de comandos denominada Setup-DS-admin.pl. El servidor de directorios solo se puede crear mediante el script Setup-DS.pl.
+Si simplemente se ejecuta la secuencia de comandos de configuración, el script inicia un instalador interactivo que solicita la configuración de las instancias del servidor de directorios y del servidor de administración. Por ejemplo:
+
+![](./img/img0020.PNG)
+
+> No vamos a encontrar ese script.
+
+Buscamos en los paquetes del SO.
+
+![](./img/img0021.PNG)
+
+Lo instalamos.
+
+![](./img/img0022.PNG)
+
+![](./img/img0023.PNG)
+
+> El script tiene otro nombre.
+
+El script se encuentra aquí.
+
+![](./img/img0024.PNG)
+
+![](./img/img0025.PNG)
+
+![](./img/img0026.PNG)
+
+![](./img/img0027.PNG)
+
+![](./img/img0028.PNG)
+
+![](./img/img0029.PNG)
+
+Comprobamos si el demonio está operativo.
+
+![](./img/img0030.PNG)
+
+![](./img/img0032.PNG)
+
+> Para comprobar que el servidor LDAP es accesible desde la red.
+
+# 3. Browser LDAP.
+
+## 3.1 Comprobar.
+
+Podemos comprobar el contenido de la base de datos LDAP usando la herramienta `gq`. Esta herramienta es un browser LDAP.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------PARA REVISAR---------------------
 
 Necesitaremos ajustar parámetros del kernel para asegurarnos de que la instalación no se quejará por la falta de recursos. Vamos a crear el siguiente fichero con la siguiente información:
 
