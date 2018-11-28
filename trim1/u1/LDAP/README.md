@@ -79,8 +79,22 @@ Comprobamos si el demonio está operativo.
 
 ## 2.3 Comprobación del servicio.
 
+![](./img/img0001.PNG)
 
+![](./img/img0002.PNG)
+
+> Primero comprobamos si el servicio está en ejecución. Luego, comprobamos si el demonio está en ejecución y, por último, comprobamos que el servidor LDAP es accesible desde la red.
 
 # 3. Browser LDAP.
 
 ## 3.1 Instalar browser LDAP.
+
+Creamos una nueva conexión con las credenciales de nuestro ordenador OpenSUSE ya que OpenLDAP es una herramienta propia de Windows y nos conectaremos en remoto.
+
+![](./img/img0004.PNG)
+
+![](./img/img0003.PNG)
+
+![](./img/img0005.PNG)
+
+> No aparecen ni grupos ni usuarios así que deberíamos crearlos.
