@@ -98,3 +98,19 @@ Creamos una nueva conexión con las credenciales de nuestro ordenador OpenSUSE y
 ![](./img/img0005.PNG)
 
 > No aparecen ni grupos ni usuarios así que deberíamos crearlos.
+
+## 3.2 Crear usuarios y grupos dentro del LDAP.
+
+En este punto vamos a escribir información dentro del servidor de directorios LDAP.
+
+![](./img/img0006.PNG)
+
+![](./img/img0007.PNG)
+
+Vamos a GQ y funciona.
+
+![](./img/img0008.PNG)
+
+![](./img/imgerror.PNG)
+
+> En el momento en que intentamos crear los usuarios y grupos nos parece el siguiente texto después de que pulsemos donde vamos a crear los usuarios.
