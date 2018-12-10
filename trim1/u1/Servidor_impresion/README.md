@@ -1,5 +1,6 @@
-Víctor Gabriel Carvajal Aróstegui
-Eleazar Sánchez Arbelo
+**Víctor Gabriel Carvajal Aróstegui**
+
+**Eleazar Sánchez Arbelo**
 
 # Servidor de Impresión en Windows.
 
