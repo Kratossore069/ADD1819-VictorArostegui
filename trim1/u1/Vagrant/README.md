@@ -28,4 +28,6 @@ Crear un directorio para nuestro proyecto Vagrant (Donde XX es el número de cad
 
 ## 2.3 Imagen, caja o box.
 
-Ahora necesitamos obtener una imagen de un sistema operativo. Vamos, por ejemplo, a conseguir una imagen de un `Ubuntu Precise de 32 bits`:
+Ahora necesitamos obtener una imagen de un sistema operativo. Vamos, por ejemplo, a conseguir una imagen de un `Ubuntu Precise de 32 bits`. Utilizamos `nmap -Pn host`.
+
+![](./img/2.PNG)
