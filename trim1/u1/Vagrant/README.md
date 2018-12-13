@@ -31,3 +31,108 @@ Crear un directorio para nuestro proyecto Vagrant (Donde XX es el número de cad
 Ahora necesitamos obtener una imagen de un sistema operativo. Vamos, por ejemplo, a conseguir una imagen de un `Ubuntu Precise de 32 bits`. Utilizamos `nmap -Pn host`.
 
 ![](./img/2.PNG)
+
+> Problemas con la dirección de la práctica.
+
+![](./img/3.PNG)
+
+> Esta caja no sirvió para la práctica.
+
+https://cloud-images.ubuntu.com/vagrant/trusty/20181207/
+
+> De esta página se saca la nueva caja que vamos a usar. Vamos a usar la última.
+
+![](./img/4.PNG)
+
+![](./img/5.PNG)
+
+> Hay una carpeta oculta donde se guardan las cajas.
+
+Para usar una caja determinada en nuestro proyecto, modificamos el fichero `Vagrantfile` (dentro de la carpeta de nuestro proyecto).
+Cambiamos la línea `config.vm.box = "base"` por `config.vm.box = "micajaXX_ubuntu_precise32"`.
+Es más cómodo trabajar con el fichero si eliminamos todas las líneas de comentarios. De modo que vamos a hacer una copia de seguridad del archivo `Vagrantfile` a `Vagrantfile.bak`, y vamos a quitar todas las líneas comentadas del `Vagrantfile`.
+
+![](./img/6.PNG)
+
+![](./img/7.PNG)
+
+## 2.4 Iniciar una nueva máquina.
+
+![](./img/8.PNG)
+
+![](./img/9.PNG)
+
+> Comando para conectar por SSH con nuestra máquina Vagrant.
+
+A continuación otros comandos útiles.
+
+`vagrant suspend`: Suspender la máquina virtual. Tener en cuenta que la MV en modo suspendido consume más espacio en disco debido a que el estado de la máquina virtual que suele almacenarse en la RAM se pasa a disco.
+
+`vagrant resume` : Volver a despertar la máquina virtual.
+
+`vagrant halt`: Apagarla la máquina virtual.
+
+`vagrant status`: Estado actual de la máquina virtual.
+
+`vagrant destroy`: Para eliminar la máquina virtual (No los ficheros de configuración).
+
+# 3. Configuración del entorno virtual.
+
+## 3.1 Carpetas sincronizadas.
+
+![](./img/10.PNG)
+
+![](./img/11.PNG)
+
+Esto nos mostrará que efectivamente el directorio `/vagrant` dentro del entorno virtual posee el mismo `Vagrantfile` que se encuentra en nuestro sistema anfitrión.
+
+## 3.2 Redireccionamiento de los puertos.
+
+Cuando trabajamos con máquinas virtuales, es frecuente usarlas para proyectos enfocados a la web, y para acceder a las páginas es necesario configurar el enrutamiento de puertos.
+
+![](./img/12.PNG)
+
+> En la imagen vemos que necesitamos el usuario sudo para poder hacer update.
+
+![](./img/13.PNG)
+
+Modificar el fichero Vagrantfile, de modo que el puerto 4567 del sistema anfitrión sea enrutado al puerto 80 del ambiente virtualizado.
+
+![](./img/14.PNG)
+
+Volvemos a iniciar la MV con `vagrant reload`. Es posible que nos salga un mensaje de precaución del firewall.
+
+Confirmar que hay un servicio a la escucha en 4567. Para ello, `vagrant ssh` y, en la MV, ejecutamos nmap.
+
+![](./img/15.PNG)
+
+![](./img/16.PNG)
+
+> Vemos que, iniciando en la máquina real una búsqueda en el navegador, tenemos acceso y todo va bien.
+
+# 4. Ejemplos de configuración Vagrantfile.
+
+`config.vm.network "private_network", ip: "192.168.33.10"`
+
+Ejemplo para configurar las carpetas compartidas:
+`config.vm.synced_folder "htdocs", "/var/www/html"`
+
+Ejemplo para configurar la conexión SSH de vagrant a nuestra máquina virtual:
+
+`config.ssh.username = 'root'`
+
+`config.ssh.password = 'vagrant'`
+
+`config.ssh.insert_key = 'true'`
+
+Ejemplo para configurar la ejecución remota de aplicaciones gráficas instaladas en la máquina virtual, mediante SSH:
+
+`config.ssh.forward_agent = true`
+
+`config.ssh.forward_x11 = true`
+
+# 5. Suministro.
+
+Ejecutar una serie de scripts durante el proceso de arranque del entorno virtual para instalar, configurar y personalizar un sin fin de aspectos del SO del sistema anfitrión.
+
+![](./img/17.PNG)
