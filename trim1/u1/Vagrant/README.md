@@ -131,8 +131,36 @@ Ejemplo para configurar la ejecución remota de aplicaciones gráficas instalada
 
 `config.ssh.forward_x11 = true`
 
-# 5. Suministro.
+# 6. Suministro.
 
 Ejecutar una serie de scripts durante el proceso de arranque del entorno virtual para instalar, configurar y personalizar un sin fin de aspectos del SO del sistema anfitrión.
 
 ![](./img/17.PNG)
+
+## 6.1 Proyecto 3 (Suministro mediante shell script).
+
+![](./img/18.PNG)
+
+Vamos a indicar a Vagrant que debe ejecutar el script anterior.
+
+![](./img/19.PNG)
+
+> Tener cuidado de copiar las líneas correspondientes dentro del Vagrantfile del nuevo proyecto. Crear el archivo Vagrantfile si fuera necesario y `vagrant init`, `vagrant up`.
+
+Observamos que vamos al navegador y la dirección con puerto 4567 nos muestra Apache corriendo.
+
+
+
+## 6.2 Proyecto 4 (Suministro mediante Puppet).
+
+![](./img/21.PNG)
+
+Personalizamos el Vagrantfile.
+
+![](./img/22.PNG)
+
+Creamos la ruta `manifests/default.pp` e insertamos la información siguiente.
+
+![](./img/23.PNG)
+
+Para que se apliquen los cambios de configuración debemos, con la MV encendida, recargar la configuración `vagrant reload`, y volver a ejecutar la provisión `vagrant provision`.
