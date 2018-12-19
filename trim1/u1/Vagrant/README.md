@@ -149,7 +149,7 @@ Vamos a indicar a Vagrant que debe ejecutar el script anterior.
 
 Observamos que vamos al navegador y la dirección con puerto 4567 nos muestra Apache corriendo.
 
-
+![](./img/20.PNG)
 
 ## 6.2 Proyecto 4 (Suministro mediante Puppet).
 
@@ -164,3 +164,36 @@ Creamos la ruta `manifests/default.pp` e insertamos la información siguiente.
 ![](./img/23.PNG)
 
 Para que se apliquen los cambios de configuración debemos, con la MV encendida, recargar la configuración `vagrant reload`, y volver a ejecutar la provisión `vagrant provision`.
+
+
+
+
+# 7. Proyecto 5 (Nuestra caja)
+
+En este apartado vamos a crear nuestra propia caja/box personalizada a partir de una MV de VirtualBox que tengamos.
+
+## 7.1 Preparar la MV VirtualBox.
+
+Crear una MV VirtualBox nueva o usar una que ya tengamos e instalar OpenSSH Server en la MV. A continuación, crear el usuario `vagrant`, para poder acceder a la máquina virtual por SSH. A este usuario le agregamos una clave pública para autorizar el acceso sin clave desde Vagrant.
+
+![](./img/24.PNG)
+
+Lo que estamos haciendo es crear una llave pública para poder conectar con la otra máquina a partir de dicha llave.
+
+ Poner clave `vagrant` al usuario vagrant y al usuario root.
+
+ ![](./img/25.PNG)
+
+Tenemos que conceder permisos al usuario `vagrant` para que pueda configurar la red, instalar software, montar carpetas compartidas, etc. para ello debemos configurar `/etc/sudoers` para que no nos solicite el password de root, cuando realicemos estas operación con el usuario vagrant.
+
+![](./img/26.PNG)
+
+Debemos asegurarnos que tenemos instalado las VirtualBox Guest Additions con una versión compatible con el host anfitrión.
+
+![](./img/27.PNG)
+
+![](./img/imga.PNG)
+
+## 7.2 Crear caja Vagrant.
+
+![](./img/28.PNG)
