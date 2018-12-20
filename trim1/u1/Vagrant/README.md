@@ -147,9 +147,13 @@ Vamos a indicar a Vagrant que debe ejecutar el script anterior.
 
 > Tener cuidado de copiar las líneas correspondientes dentro del Vagrantfile del nuevo proyecto. Crear el archivo Vagrantfile si fuera necesario y `vagrant init`, `vagrant up`.
 
+![](./img/c.PNG)
+
+> En la siguiente imagen de arriba podemos comprobar que podemos tener un error a la hora de que el Apache no aparezca debido a un problema con las direcciones del index.html porque es una versión antigua.
+
 Observamos que vamos al navegador y la dirección con puerto 4567 nos muestra Apache corriendo.
 
-![](./img/20.PNG)
+![](./img/b.PNG)
 
 ## 6.2 Proyecto 4 (Suministro mediante Puppet).
 
