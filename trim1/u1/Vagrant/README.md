@@ -167,7 +167,6 @@ Para que se apliquen los cambios de configuración debemos, con la MV encendida,
 
 
 
-
 # 7. Proyecto 5 (Nuestra caja)
 
 En este apartado vamos a crear nuestra propia caja/box personalizada a partir de una MV de VirtualBox que tengamos.
@@ -197,3 +196,11 @@ Debemos asegurarnos que tenemos instalado las VirtualBox Guest Additions con una
 ## 7.2 Crear caja Vagrant.
 
 ![](./img/28.PNG)
+
+Con el siguiente comando comprobamos las máquinas virtuales que existen en nuestro ordenador.
+
+![](./img/29.PNG)
+
+Con los siguientes comandos se crea la caja que vamos a exportar y la visualizamos en nuestro ordenador.
+
+![](./img/30.PNG)
