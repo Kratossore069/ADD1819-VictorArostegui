@@ -63,3 +63,49 @@ Nos conectamos desde Windows.
 ![](./img2/15.PNG)
 
 # 3. Cambiamos la identidad del servidor.
+
+Asegurarnos de que existen claves públicas y privadas.
+
+![](./img2/16.PNG)
+
+Quitamos líneas y sólo dejamos ésta.
+
+![](./img2/17.PNG)
+
+## 3.1 Regenerar certificados
+
+![](./img2/18.PNG)
+
+![](./img2/19.PNG)
+
+## 3.2 Comprobamos.
+
+Vemos que nos podemos conectar sin más que usando el password.
+
+![](./img2/20.PNG)
+
+# 4. Personalización del prompt bash.
+
+Ir a la dirección e insertar el texto siguiente.
+
+![](./img2/21.PNG)
+
+Crear un nuevo fichero en la siguiente dirección.
+
+![](./img2/22.PNG)
+
+Comprobamos desde un cliente para observar los cambios.
+
+![](./img2/23.PNG)
+
+# 5. Autenticación mediante claves públicas.
+
+![](./img2/24.PNG)
+
+![](./img2/25.PNG)
+
+![](./img2/26.PNG)
+
+![](./img2/27.PNG)
+
+# 6. Uso de SSH como túnel para X.
