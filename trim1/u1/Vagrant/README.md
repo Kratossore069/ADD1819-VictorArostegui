@@ -161,7 +161,7 @@ Observamos que vamos al navegador y la dirección con puerto 4567 nos muestra Ap
 
 Personalizamos el Vagrantfile.
 
-![](./img/22.PNG)
+![](./img/qwe.PNG)
 
 Creamos la ruta `manifests/default.pp` e insertamos la información siguiente.
 
@@ -169,7 +169,7 @@ Creamos la ruta `manifests/default.pp` e insertamos la información siguiente.
 
 Para que se apliquen los cambios de configuración debemos, con la MV encendida, recargar la configuración `vagrant reload`, y volver a ejecutar la provisión `vagrant provision`.
 
-
+![](./img/qww.PNG)
 
 # 7. Proyecto 5 (Nuestra caja)
 
