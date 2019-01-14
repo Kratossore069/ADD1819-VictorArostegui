@@ -35,16 +35,16 @@ Si queremos que nuestro contenedor tenga acceso a la red exterior, debemos activ
 
 Información sobre otros comandos útiles:
 
-docker stop CONTAINERID, parar un contenedor que estaba iniciado.
+`docker stop CONTAINERID`, parar un contenedor que estaba iniciado.
 
-docker start CONTAINERID, inicia un contenedor que estaba parado.
+`docker start CONTAINERID`, inicia un contenedor que estaba parado.
 
-docker attach CONTAINERID, conecta el terminal actual con el interior de contenedor.
+`docker attach CONTAINERID`, conecta el terminal actual con el interior de contenedor.
 
-docker ps, muestra los contenedores en ejecución.
+`docker ps`, muestra los contenedores en ejecución.
 
-docker ps -a, muestra todos los contenedores en ejecución o no.
+`docker ps -a`, muestra todos los contenedores en ejecución o no.
 
-docker rm CONTAINERID, eliminar un contenedor.
+`docker rm CONTAINERID`, eliminar un contenedor.
 
-docker rmi IMAGENAME, eliminar una imagen.
+`docker rmi IMAGENAME`, eliminar una imagen.
