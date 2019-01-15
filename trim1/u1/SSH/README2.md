@@ -109,3 +109,33 @@ Comprobamos desde un cliente para observar los cambios.
 ![](./img2/27.PNG)
 
 # 6. Uso de SSH como túnel para X.
+
+Instalamos el Geany en el server.
+
+![](./img2/28.PNG)
+
+Modificar servidor SSH para permitir la ejecución de aplicaciones gráficas.
+
+![](./img2/29.PNG)
+
+En el cliente no está instalado el Geany. En la imagen siguiente no descargamos Geany.
+
+![](./img2/30.PNG)
+
+![](./img2/31.PNG)
+
+# 7. Aplicaciones Windows nativas.
+
+Podemos tener aplicaciones Windows nativas instaladas en ssh-server mediante el emulador WINE.
+
+![](./img2/32.PNG)
+
+![](./img2/33.PNG)
+
+![](./img2/34.PNG)
+
+# 8. Restricciones de uso.
+
+Vamos a modificar los usuarios del servidor SSH para añadir algunas restricciones de uso del servicio.
+
+## 8.1 Restricción sobre un usuario.
