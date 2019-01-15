@@ -48,3 +48,9 @@ Información sobre otros comandos útiles:
 `docker rm CONTAINERID`, eliminar un contenedor.
 
 `docker rmi IMAGENAME`, eliminar una imagen.
+
+# 5. Creación manual.
+
+Nuestro SO base es OpenSUSE, pero vamos a crear un contenedor Debian8, y dentro instalaremos Nginx.
+
+# 5.1 Crear una imagen manualmente.
