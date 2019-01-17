@@ -54,3 +54,23 @@ Información sobre otros comandos útiles:
 Nuestro SO base es OpenSUSE, pero vamos a crear un contenedor Debian8, y dentro instalaremos Nginx.
 
 # 5.1 Crear una imagen manualmente.
+
+![](./img/7.PNG)
+
+![](./img/8.PNG)
+
+![](./img/9.PNG)
+
+![](./img/10.PNG)
+
+![](./img/11.PNG)
+
+Iniciamos el servicio.
+
+![](./img/12.PNG)
+
+![](./img/13.PNG)
+
+![](./img/14.PNG)
+
+![](./img/15.PNG)
