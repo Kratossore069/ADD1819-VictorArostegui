@@ -167,3 +167,19 @@ Vamos a modificar SSH de modo que al usar el usuario por SSH desde los clientes 
 ![](./img2/42.PNG)
 
 ![](./img2/43.PNG)
+
+![](./img2/44.PNG)
+
+> Tengo problemas a la hora de tener dos máquinas Windows encendidas, por eso, solo hago la prueba con una Windows y una Linux.
+
+Ahora realizar una instalación de OpenSSH.
+
+![](./img2/45.PNG)
+
+![](./img2/46.PNG)
+
+![](./img2/47.PNG)
+
+![](./img2/48.PNG)
+
+> Panel de control -> Sistema y seguridad -> Firewall de Windows -> Opciones avanzadas -> Reglas de entrada -> Añadir una nueva regla para el puerto 22 y seguir las instrucciones.
