@@ -73,4 +73,22 @@ Iniciamos el servicio.
 
 ![](./img/14.PNG)
 
+![](./img/ojo.PNG)
+
+> Esta imagen muestra que debemos tener en la ruta /root un archivo server.sh con lo siguiente.
+
+![](./img/ojo2.PNG)
+
 ![](./img/15.PNG)
+
+Ya tenemos nuestro contenedor auto-suficiente de Nginx, ahora debemos crear una nueva imagen con los cambios que hemos hecho, para esto abrimos otra ventana de terminal y busquemos el IDContenedor.
+
+![](./img/16.PNG)
+
+![](./img/17.PNG)
+
+![](./img/18.PNG)
+
+# 5.2 Crear contenedor con Nginx.
+
+Iniciemos el contenedor de la siguiente manera:
