@@ -139,3 +139,47 @@ Podemos tener aplicaciones Windows nativas instaladas en ssh-server mediante el 
 Vamos a modificar los usuarios del servidor SSH para añadir algunas restricciones de uso del servicio.
 
 ## 8.1 Restricción sobre un usuario.
+
+Vamos a modificar SSH de modo que al usar el usuario por SSH desde los clientes tendremos permiso denegado.
+
+![](./img2/35.PNG)
+
+![](./img2/36.PNG)
+
+# 8.2 Restricción sobre una aplicación.
+
+![](./img2/37.PNG)
+
+![](./img2/38.PNG)
+
+![](./img2/39.PNG)
+
+![](./img2/40.PNG)
+
+> Desde el root NO funciona.
+
+![](./img2/41.PNG)
+
+> Desde el usuario funciona.
+
+# 9. Servidor SSH en Windows.
+
+![](./img2/42.PNG)
+
+![](./img2/43.PNG)
+
+![](./img2/44.PNG)
+
+> Tengo problemas a la hora de tener dos máquinas Windows encendidas, por eso, solo hago la prueba con una Windows y una Linux.
+
+Ahora realizar una instalación de OpenSSH.
+
+![](./img2/45.PNG)
+
+![](./img2/46.PNG)
+
+![](./img2/47.PNG)
+
+![](./img2/48.PNG)
+
+> Panel de control -> Sistema y seguridad -> Firewall de Windows -> Opciones avanzadas -> Reglas de entrada -> Añadir una nueva regla para el puerto 22 y seguir las instrucciones.
