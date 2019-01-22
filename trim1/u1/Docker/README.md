@@ -92,3 +92,59 @@ Ya tenemos nuestro contenedor auto-suficiente de Nginx, ahora debemos crear una 
 # 5.2 Crear contenedor con Nginx.
 
 Iniciemos el contenedor de la siguiente manera:
+
+`docker ps`
+
+`docker ps -a`
+
+`docker run --name=con_nginx -p 80 -t dvarrui/nginx /root/server.sh`
+
+Booting Nginx!
+
+Waiting...
+
+Los mensajes muestran que el script server.sh está en ejecución. No parar el programa. Es correcto.
+
+El argumento -p 80 le indica a Docker que debe mapear el puerto especificado del contenedor, en nuestro caso el puerto 80 es el puerto por defecto sobre el cual se levanta Nginx.
+
+El script server.shnos sirve para iniciar el servicio y permanecer en espera. Lo podemos hacer también con el prgorama Supervisor.
+
+Abrimos una nueva terminal.
+
+`docker ps`, nos muestra los contenedores en ejecución. Podemos apreciar que la última columna nos indica que el puerto 80 del contenedor está redireccionado a un puerto local 0.0.0.0.:NNNNNN->80/tcp.
+
+Abrir navegador web y poner URL 0.0.0.0.:NNNNNN. De esta forma nos conectaremos con el servidor Nginx que se está ejecutando dentro del contenedor.
+
+Comprobar el acceso a holamundo.html.
+
+Paramos el contenedor y lo eliminamos.
+
+`docker ps`
+
+`docker stop con_nginx`
+
+`docker ps`
+
+`docker ps -a`
+
+`docker rm con_nginx`
+
+`docker ps -a`
+
+Como ya tenemos una imagen docker, podemos crear nuevos contenedores cuando lo necesitemos.
+
+# 6. Crear un contenedor con Dockerfile.
+
+Ahora vamos a conseguir el mismo resultado del apartado anterior, pero usando un fichero de configuración, llamado Dockerfile.
+
+## 6.1 Comprobaciones iniciales:
+
+![](./img/19.PNG)
+
+## 6.2 Preparar ficheros.
+
+Crear directorio `/home/nombre-alumno/dockerXX`, poner dentro los siguientes ficheros:
+
+![](./img/20.PNG)
+
+![](./img/21.PNG)
