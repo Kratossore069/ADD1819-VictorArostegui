@@ -150,3 +150,5 @@ Crear directorio `/home/nombre-alumno/dockerXX`, poner dentro los siguientes fic
 ![](./img/21.PNG)
 
 ## 6.3 Crear imagen desde el Dockerfile.
+
+![](./img/22.PNG)
