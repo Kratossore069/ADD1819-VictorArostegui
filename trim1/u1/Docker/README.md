@@ -152,3 +152,9 @@ Crear directorio `/home/nombre-alumno/dockerXX`, poner dentro los siguientes fic
 ## 6.3 Crear imagen desde el Dockerfile.
 
 ![](./img/22.PNG)
+
+![](./img/23.PNG)
+
+## 6.4 Crear contenedor y comprobar.
+
+A continuación vamos a crear un contenedor con el nombre con_nginx2, a partir de la imagen dvarrui/nginx2, y queremos que este contenedor ejecute el programa /root/server.sh.
