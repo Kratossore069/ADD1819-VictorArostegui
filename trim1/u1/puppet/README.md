@@ -6,34 +6,36 @@ Es una herramienta diseñada para administrar la configuración de sistemas Wind
 
 ## 1.1 Requisitos.
 
-![](./img/0.png)
+![](./img/0.PNG)
 
 ## 1.2 Servidor DNS y el fichero /etc/resolv.conf.
 
-![](./img/1.png)
+![image](./img/1.PNG)
 
-![](./img/2.png)
+![image](./img/2.PNG)
 
 ## 1.3 Hostname y dnsdomainname.
 
-![](./img/3.png)
+![](./img/3.PNG)
 
-![](./img/4.png)
+![](./img/4.PNG)
 
-![](./img/5.png)
+![](./img/5.PNG)
 
 # 2. Instalación y configuración del MASTER.
 
-![](./img/6.png)
+![](./img/6.PNG)
 
-![](./img/7.png)
+![](./img/7.PNG)
 
 Comprobaciones.
 
-![](./img/8.png)
+![](./img/8.PNG)
 
 **Cómo deberia quedar para tener conexión.**
 
-![](./img/9.png)
+![](./img/9.PNG)
 
 # 4. Fichero pp VERSION-1.
+
+![image](./img/10.PNG)
