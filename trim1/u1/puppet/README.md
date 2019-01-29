@@ -14,6 +14,8 @@ Es una herramienta diseñada para administrar la configuración de sistemas Wind
 
 ![image](./img/2.PNG)
 
+![image](./img/aa.PNG)
+
 ## 1.3 Hostname y dnsdomainname.
 
 ![](./img/3.PNG)
@@ -39,3 +41,15 @@ Comprobaciones.
 # 4. Fichero pp VERSION-1.
 
 ![image](./img/10.PNG)
+
+![image](./img/11.PNG)
+
+![image](./img/12.PNG)
+
+![image](./img/13.PNG)
+
+> `/var/log/syslog` para observar los fallos por si hubiera.
+
+# 5. Instalación y configuración del cliente puppet Debian.
+
+## 5.1 Preparativos para CLIENT1.
