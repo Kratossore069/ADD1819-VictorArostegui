@@ -24,7 +24,19 @@ Es una herramienta diseñada para administrar la configuración de sistemas Wind
 
 ![](./img/5.PNG)
 
+## 1.4 Resolución de nombres.
+
+Comandos a usar:
+
+* `synaptic&` para entrar en paquetes para desinstalar.
+
+* Desinstalar `Networkmanager`
+
+* Volver a escribir en `/etc/resolv.conf -> nameserver 8.8.4.4` y reiniciar la máquina.
+
 # 2. Instalación y configuración del MASTER.
+
+## 2.1 Configurar servidor DNS.
 
 ![](./img/6.PNG)
 
