@@ -65,3 +65,40 @@ Comprobaciones.
 # 5. Instalación y configuración del cliente puppet Debian.
 
 ## 5.1 Preparativos para CLIENT1.
+
+![image](./img/14.PNG)
+
+## 4.2 Instalación del agente.
+
+![image](./img/15.PNG)
+
+![image](./img/16.PNG)
+
+> Hay que incluir esa línea en esa dirección en el cliente.
+
+![image](./img/17.PNG)
+
+# 6. Aceptar certificado.
+
+Antes de que el master acepte a `pp-client14d.curso1819`, como cliente, se deben intercambiar los certificados.
+
+## 6.1 Aceptar certificado.
+
+![image](./img/18.PNG)
+
+![image](./img/19.PNG)
+
+## 6.2 Comprobación.
+
+Vamos a comprobar que las órdenes (manifiesto) del master, llega
+bien al cliente y éste las ejecuta.
+
+![image](./img/20.PNG)
+
+> Iniciamos el servicio Puppet y, si tuviéramos fallos, consultar los dos comandos siguientes.
+
+# 7. Fichero pp VERSION-2.
+
+Primero hemos probado una configuración sencilla en PuppetMaster. Ahora podemos pasar a algo más complejo en este apartado.
+
+Contenido para `hostlinux2.pp`, versión 2 en `/etc/puppet/manifests/classes/`:
