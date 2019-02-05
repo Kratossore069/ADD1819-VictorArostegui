@@ -102,3 +102,13 @@ bien al cliente y éste las ejecuta.
 Primero hemos probado una configuración sencilla en PuppetMaster. Ahora podemos pasar a algo más complejo en este apartado.
 
 Contenido para `hostlinux2.pp`, versión 2 en `/etc/puppet/manifests/classes/`:
+
+![image](./img/21.PNG)
+
+![image](./img/22.PNG)
+
+Modificar `site.pp` con:
+
+![image](./img/23.PNG)
+
+# 8. Fichero pp VERSION-3: Cliente puppet windows.
