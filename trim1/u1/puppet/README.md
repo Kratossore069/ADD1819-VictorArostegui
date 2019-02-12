@@ -112,3 +112,17 @@ Modificar `site.pp` con:
 ![image](./img/23.PNG)
 
 # 8. Fichero pp VERSION-3: Cliente puppet windows.
+
+En el master vamos a crear una configuración puppet para las máquinas windows, dentro del fichero `/etc/puppet/manifests/classes/hostwindows3.pp`, con el siguiente contenido:
+
+![image](./img/24.PNG)
+
+Ahora vamos a modificar el fichero `site.pp` del master, para que tenga en cuenta la configuración de clientes GNU/Linux y clientes Windows, de la siguiente forma:
+
+![image](./img/25.PNG)
+
+Entramos a Windows.
+
+![image](./img/26.PNG)
+
+Modificar el fichero de la misma forma que hicimos para client1.
