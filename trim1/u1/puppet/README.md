@@ -126,3 +126,29 @@ Entramos a Windows.
 ![image](./img/26.PNG)
 
 Modificar el fichero de la misma forma que hicimos para client1.
+
+![image](./img/27.PNG)
+
+Ir al master y ejecutar el comando `facter`, para ver la versión de Puppet que está usando el master.
+
+![image](./img/28.PNG)
+
+Ahora vamos a instalar `puppet` en Windows. En https://downloads.puppetlabs.com/windows/
+
+![image](./img/29.PNG)
+
+> Descargamos la versión 3.8.2 pero no es la que debemos utilizar.
+
+Iniciar consola `puppet` como administrador.
+
+![image](./img/30.PNG)
+
+![image](./img/31.PNG)
+
+> Este es el principal problema de esta práctica; no coinciden las versiones de Puppet de Linux y las de Windows.
+
+![image](./img/32.PNG)
+
+Con los comandos anteriores podemos hacernos una idea de como terminar de configurar el fichero `/etc/puppet/manifests/classes/hostwindows2.pp` del master.
+
+![image](./img/33.PNG)
