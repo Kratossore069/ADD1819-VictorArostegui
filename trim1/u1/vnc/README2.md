@@ -61,3 +61,11 @@ Establecemos reglas en el firewall para permitir la conexión.
 ![inmage](./img2/17.PNG)
 
 ![inmage](./img2/18.PNG)
+
+# 3. Comprobaciones con SSOO cruzados.
+
+![inmage](./img2/19.PNG)
+
+![inmage](./img2/20.PNG)
+
+# 4. DISPLAY 0 en GNU/Linux.
