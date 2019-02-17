@@ -69,3 +69,17 @@ Establecemos reglas en el firewall para permitir la conexión.
 ![inmage](./img2/20.PNG)
 
 # 4. DISPLAY 0 en GNU/Linux.
+
+Cuando queremos ejecutar `vncserver` para controlar directamente la pantalla local usaremos `x0vncserver` de tigervnc.
+
+![inmage](./img2/21.PNG)
+
+![inmage](./img2/22.PNG)
+
+> man x0vncserver
+
+![inmage](./img2/23.PNG)
+
+Ir al cliente y probamos a conectarnos con el servidor.
+
+![inmage](./img2/24.PNG)
