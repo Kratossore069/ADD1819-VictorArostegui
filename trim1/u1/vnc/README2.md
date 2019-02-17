@@ -19,3 +19,11 @@ Establecemos reglas en el firewall para permitir la conexión.
 ![inmage](./img2/6.PNG)
 
 ## 1.2 Ir a la máquina GNU/Linux.
+
+![inmage](./img2/7.PNG)
+
+## 1.3 Ir al cliente Windows.
+
+![inmage](./img2/8.PNG)
+
+## 1.4 Comprobaciones finales.
