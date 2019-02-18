@@ -152,3 +152,9 @@ Iniciar consola `puppet` como administrador.
 Con los comandos anteriores podemos hacernos una idea de como terminar de configurar el fichero `/etc/puppet/manifests/classes/hostwindows2.pp` del master.
 
 ![image](./img/33.PNG)
+
+# Demostración.
+
+![image](./img/34.PNG)
+
+![image](./img/35.PNG)
