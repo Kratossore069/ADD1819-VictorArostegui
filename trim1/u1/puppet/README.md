@@ -157,4 +157,6 @@ Con los comandos anteriores podemos hacernos una idea de como terminar de config
 
 ![image](./img/37.PNG)
 
+![image](./img/38.PNG)
+
 ![image](./img/36.PNG)
