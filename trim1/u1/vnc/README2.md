@@ -28,6 +28,10 @@ Establecemos reglas en el firewall para permitir la conexión.
 
 ## 1.4 Comprobaciones finales.
 
+![inmage](./img2/25.PNG)
+
+> Problema resuelto usando la máquina real y la máquina virtual.
+
 # 2. Instalación en OpenSUSE.
 
 ## 2.1 Ir al servidor VNC OpenSUSE.
